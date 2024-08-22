@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Dreamy Dough 🍰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project URL : 
 
-## Available Scripts
+Welcome to Dreamy Dough, a delightful web application that lets you explore, customize, and order the most delectable cakes for any occasion. Whether you're planning a birthday, wedding, or just a sweet treat for yourself, Dreamy Dough offers a wide variety of options to satisfy your cravings.
 
-In the project directory, you can run:
+ ## Features
+🧁 Customizable Cakes: Choose your favorite flavors, sizes, and decorations.
 
-### `npm start`
+🎂 Interactive Gallery: Browse through a beautifully presented selection of cakes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🛒 Seamless Ordering: Add your customized cake to the cart and place an order with ease.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔍 Detailed Descriptions: Get all the details you need about each cake, including ingredients and pricing.
 
-### `npm test`
+🎨 Responsive Design: Enjoy a smooth browsing experience on both desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+Frontend: React.js, CSS, HTML
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Animations: Framer Motion
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Routing: React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+State Management: React Hooks
 
-### `npm run eject`
+Package Manager: npm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Icons and Fonts: Google Fonts, Font Awesome
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/7f358375-3044-484c-831d-4cd38d04fd29">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="954" alt="image" src="https://github.com/user-attachments/assets/f02cf379-d602-4e8e-b54c-390d9d2a5de6">
 
-## Learn More
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/563d11db-bfb2-4421-ae32-0e45915f3592">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/18d1247a-9b52-480a-a3e3-bbe80b2b80a3">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
+To run this project locally, follow these steps:
 
-### Code Splitting
+git clone https://github.com/vathsalya9/dreamy-dough.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+cd dreamy-dough
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
+Navigate to http://localhost:3000 to view the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
+Browse Cakes: Navigate through the gallery to explore different cakes.
 
-### Advanced Configuration
+Customize Your Cake: Use the customization options to select your preferred size, flavor, and design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Order Your Cake: Add your cake to the cart and proceed to checkout.
 
-### Deployment
+Enjoy: Relish the joy of seeing your dream cake come to life!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
