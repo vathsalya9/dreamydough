@@ -1,0 +1,72 @@
+/* Adjust the padding-top to account for the fixed navbar */
+.about-section {
+  padding: 50px 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding-top: 85px; /* Adjust based on the height of your fixed navbar */
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-column {
+  flex: 2; /* 60% width */
+  background-color: #957DAD; /* Purple background for the text column */
+  color: white;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.text-column h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-column .intro-text {
+  font-size: 13px;
+  margin-right: 60px;
+}
+
+.highlight-text {
+  color: #413250; /* Different color for 'Dreamy Dough' */
+  font-size: 1.5em; /* Adjust font size as needed */
+  font-weight: bold;
+}
+
+.image-column {
+  flex: 3; /* 40% width */
+  background-color: white; /* White background for the image column */
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow */
+}
+
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Start as invisible */
+  transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.slider-image.active {
+  opacity: 1; /* Make the active image visible */
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}

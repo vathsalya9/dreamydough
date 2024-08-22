@@ -1,0 +1,73 @@
+.cake-detail-page {
+  padding: 20px;
+}
+
+.back-button {
+  background-color: #957DAD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cake-detail-content {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Center the content horizontally */
+  gap: 5px; /* Space between columns */
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.cake-image-container {
+  width: 1000px;
+  height: 400px;
+}
+
+.cake-image-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.cake-image-img:hover {
+  opacity: 0.6; /* Adjust transparency on hover */
+}
+
+.cake-info {
+  background-color: #f8f8f8;
+  color: #957DAD;
+  padding-left: 40px;
+  margin-right: 60px;
+  width: 400px;
+}
+
+.cake-size label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cake-size select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.cake-price {
+  margin: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #957DAD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

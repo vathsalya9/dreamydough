@@ -1,0 +1,70 @@
+.customer-reviews-section {
+  padding: 30px 20px; /* Adjust top and bottom padding */
+  background-color: #f8f8f8; /* Light background color */
+  padding-top: 40px; /* Reduced padding-top to decrease space above the section */
+}
+
+.reviews-title {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #957DAD;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-container {
+  max-width: 1200px; /* Adjust based on desired width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 5px; /* Add padding to create space on the left and right */
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space between cards */
+  gap: 40px; /* Gap between cards */
+  border: 9px solid #ffffff;
+}
+
+.review-card {
+  background-color: #957DAD; /* Purple background */
+  border: 10px solid #ffffff;
+  border-radius: 8px; /* Reduced border radius */
+  padding: 15px; /* Reduced padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+  text-align: center;
+  font-size: 20px; /* Smaller font size */
+  color: white; /* Text color for better contrast */
+  width: calc(33.333% - 20px); /* Adjust width for 3 cards per row with 20px gap */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  height: 200px; /* Set a fixed height for all review cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.review-name {
+  font-size: 1.1em; /* Adjusted font size */
+  margin-bottom: 8px; /* Reduced margin */
+  font-weight: bold;
+}
+
+.review-date {
+  font-size: 0.8em; /* Adjusted font size */
+  color: #ddd; /* Lighter color for date */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.review-rating {
+  font-size: 1.1em; /* Adjusted font size */
+  color: gold; /* Yellow color for stars */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.review-text {
+  font-size: 0.9em; /* Adjusted font size */
+  color: #ddd; /* Lighter text color */
+  flex-grow: 1; /* Allow text to expand and fill space */
+}

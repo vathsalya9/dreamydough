@@ -1,0 +1,83 @@
+.contact-reserve-section {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  color: #957DAD;
+  padding-top: 70px;
+}
+
+.contact-reserve-container {
+  max-width: 100%; 
+  margin: 0 auto; 
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.cake-image-container,
+.contact-reserve-text,
+.contact-map {
+  width: 33.33%; /* Ensure each column takes up an equal width */
+  max-width: 33.33%;
+}
+
+.cake-image-container {
+  height: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2.0);
+}
+
+.cake-image {
+  width: 100%; 
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  object-fit: cover; 
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+}
+
+.cake-image.show {
+  opacity: 1;
+}
+
+.contact-reserve-text {
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: center;
+}
+
+.contact-reserve-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-family: 'EB Garamond', serif;
+  color: #957DAD;
+  text-align: center; 
+}
+
+.contact-info {
+  font-size: 1.1em;
+  margin-top: 20px; 
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  font-size: 20px; 
+  color: #957DAD; 
+}
+
+.contact-map {
+  height: 400px; /* Height of the Google Map */
+}
