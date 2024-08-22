@@ -6,17 +6,27 @@ Welcome to Dreamy Dough, a delightful web application that lets you explore, cus
 
  ## Features
 🧁 Customizable Cakes: Choose your favorite flavors, sizes, and decorations.
+
 🎂 Interactive Gallery: Browse through a beautifully presented selection of cakes.
+
 🛒 Seamless Ordering: Add your customized cake to the cart and place an order with ease.
+
 🔍 Detailed Descriptions: Get all the details you need about each cake, including ingredients and pricing.
+
 🎨 Responsive Design: Enjoy a smooth browsing experience on both desktop and mobile devices.
 
 ## Technologies Used
+
 Frontend: React.js, CSS, HTML
+
 Animations: Framer Motion
+
 Routing: React Router
+
 State Management: React Hooks
+
 Package Manager: npm
+
 Icons and Fonts: Google Fonts, Font Awesome
 
 ## Screenshots
