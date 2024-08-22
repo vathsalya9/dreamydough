@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/dreamydough/static/css/main.49664d41.css",
+    "main.js": "/dreamydough/static/js/main.f7b9b10d.js",
+    "static/js/453.e95fd7e8.chunk.js": "/dreamydough/static/js/453.e95fd7e8.chunk.js",
+    "static/media/Cake 12.jpg": "/dreamydough/static/media/Cake 12.be41b523e0b4f83431e0.jpg",
+    "static/media/Cake 9.png": "/dreamydough/static/media/Cake 9.026c2cdcf3e4eae51715.png",
+    "static/media/Cake 1.jpg": "/dreamydough/static/media/Cake 1.2b2ebb9113f617619e96.jpg",
+    "static/media/Cake 2.jpg": "/dreamydough/static/media/Cake 2.b2e6b9ea73272356125a.jpg",
+    "static/media/Cake 7.jpg": "/dreamydough/static/media/Cake 7.27a2539d26feb65f90eb.jpg",
+    "static/media/Cake 11.jpeg": "/dreamydough/static/media/Cake 11.5e7fa2b67945f4f1f1b5.jpeg",
+    "static/media/Cake 8.jpg": "/dreamydough/static/media/Cake 8.1f02dd28847450b8de8c.jpg",
+    "static/media/Cake 14.jpg": "/dreamydough/static/media/Cake 14.9e850a3222494623d2d0.jpg",
+    "static/media/Cake 10.jpeg": "/dreamydough/static/media/Cake 10.542c3a1f4a09a1eb613e.jpeg",
+    "static/media/Cake 4.jpg": "/dreamydough/static/media/Cake 4.e1e352e8c8de8143851f.jpg",
+    "static/media/Cake 13.jpg": "/dreamydough/static/media/Cake 13.0bd136515d07a593a638.jpg",
+    "static/media/Cake 1.jpeg": "/dreamydough/static/media/Cake 1.a18f48cc83433d779826.jpeg",
+    "static/media/Cake 3.jpeg": "/dreamydough/static/media/Cake 3.fcfda053980879cc1b21.jpeg",
+    "static/media/Cake 6.jpeg": "/dreamydough/static/media/Cake 6.64985ec94f6eb22c60a8.jpeg",
+    "static/media/Cake 5.jpeg": "/dreamydough/static/media/Cake 5.636d3b7581a92f0eac8c.jpeg",
+    "static/media/Logo.png": "/dreamydough/static/media/Logo.31af5d86d65db918dc8b.png",
+    "index.html": "/dreamydough/index.html",
+    "main.49664d41.css.map": "/dreamydough/static/css/main.49664d41.css.map",
+    "main.f7b9b10d.js.map": "/dreamydough/static/js/main.f7b9b10d.js.map",
+    "453.e95fd7e8.chunk.js.map": "/dreamydough/static/js/453.e95fd7e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49664d41.css",
+    "static/js/main.f7b9b10d.js"
+  ]
+}
