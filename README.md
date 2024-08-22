@@ -33,15 +33,22 @@ Icons and Fonts: Google Fonts, Font Awesome
 To run this project locally, follow these steps:
 
 git clone https://github.com/vathsalya9/dreamy-dough.git
+
 cd dreamy-dough
+
 npm install
+
 npm start
+
 Navigate to http://localhost:3000 to view the application
 
 ## Usage
 Browse Cakes: Navigate through the gallery to explore different cakes.
+
 Customize Your Cake: Use the customization options to select your preferred size, flavor, and design.
+
 Order Your Cake: Add your cake to the cart and proceed to checkout.
+
 Enjoy: Relish the joy of seeing your dream cake come to life!
 
 
