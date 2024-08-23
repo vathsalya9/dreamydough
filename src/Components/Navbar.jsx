@@ -25,8 +25,8 @@ export const FadeUp = (delay) => {
   };
 };
 
-const Navbar = ({ cartItems, toggleCart }) => {
-  const cartCount = cartItems.length;
+const Navbar = ({ cartItems }) => {
+  const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <motion.nav
@@ -41,7 +41,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
       </motion.div>
       <motion.ul className="nav-links" variants={FadeUp(0.3)}>
         <motion.li variants={FadeUp(0.4)}>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.5)}>
           <Link to="/about">About</Link>
@@ -61,22 +61,14 @@ const Navbar = ({ cartItems, toggleCart }) => {
       </motion.ul>
       <motion.div
         className="cart"
-        onClick={toggleCart}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         variants={FadeUp(1)}
       >
         <Link to="/cart">
           <FaShoppingCart size={30} color="black" />
-          {cartCount > 0 && (
-            <motion.span
-              className="cart-count"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: 'spring', stiffness: 100 }}
-            >
-              {cartCount}
-            </motion.span>
+          {cartItemCount > 0 && (
+            <span className="cart-badge">{cartItemCount}</span>
           )}
         </Link>
       </motion.div>

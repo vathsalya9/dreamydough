@@ -9,6 +9,10 @@ import cake3 from './Cakes/Cake 11.jpeg';
 import cake4 from './Cakes/Cake 12.jpg';
 import cake5 from './Cakes/Cake 13.jpg';
 import cake6 from './Cakes/Cake 14.jpg';
+import About from './About';
+import RecommendedCakes from './RecommendedCakes';
+import CustomerReviews from './CustomerReviews';
+import Contact from './Contact';
 
 export const FadeUp = (delay) => {
   return {
@@ -38,6 +42,29 @@ const Home = () => {
   const leftImages = [cake6, cake5, cake4];
   const rightImages = [cake1, cake2, cake3];
 
+  const [cartItems, setCartItems] = React.useState([]);
+
+  const addToCart = (cake) => {
+    const existingItem = cartItems.find(item => item.name === cake.name);
+    if (existingItem) {
+      setCartItems(cartItems.map(item =>
+        item.name === cake.name ? { ...item, quantity: item.quantity + 1 } : item
+      ));
+    } else {
+      setCartItems([...cartItems, { ...cake, quantity: 1 }]);
+    }
+  };
+
+  const removeFromCart = (cake) => {
+    const existingItem = cartItems.find(item => item.name === cake.name);
+    if (existingItem.quantity === 1) {
+      setCartItems(cartItems.filter(item => item.name !== cake.name));
+    } else {
+      setCartItems(cartItems.map(item =>
+        item.name === cake.name ? { ...item, quantity: item.quantity - 1 } : item
+      ));
+    }
+  };
   useEffect(() => {
     const leftInterval = setInterval(() => {
       setLeftImageIndex((prevIndex) => (prevIndex + 1) % leftImages.length);
@@ -116,6 +143,18 @@ const Home = () => {
           </div>
         </motion.div>
       </motion.div>
+      <section id="about">
+      <About/>
+    </section>
+    <section id="recommended">
+    <RecommendedCakes addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
+    </section>
+    <section id="reviews">
+      <CustomerReviews/>
+    </section>
+    <section id="contact">
+      <Contact/>
+    </section>
     </motion.div>
   );
 };

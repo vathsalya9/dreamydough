@@ -55,7 +55,7 @@ const OrderPage = ({ addToCart, removeFromCart, cartItems, toggleCart }) => {
   };
 
   const goToCakeDetail = (cake) => {
-    navigate('/cake-detail', { state: { cake } }); // Navigate to cake detail page with state
+    navigate(`/cake-detail/${cake.name}`, { state: { cake } });
   };
 
   return (

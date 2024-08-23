@@ -10,12 +10,9 @@ import Footer from './Components/Footer';
 import OrderPage from './Components/OrderPage';
 import Cart from './Components/Cart';
 import CakeDetail from './Components/CakeDetail';
-import './App.css';
-
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
-  const [isCartOpen, setIsCartOpen] = React.useState(false);
 
   const addToCart = (cake) => {
     const existingItem = cartItems.find(item => item.name === cake.name);
@@ -43,10 +40,6 @@ function App() {
     setCartItems([]);
   };
 
-  const toggleCart = () => {
-    setIsCartOpen(!isCartOpen);
-  };
-
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -54,27 +47,20 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar cartItems={cartItems} toggleCart={toggleCart} />
+        <Navbar cartItems={cartItems} /> {/* Pass cartItems to Navbar */}
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/order/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
+            <Route path="/order/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />} />
             <Route path="/recommended" element={<RecommendedCakes addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />} />
             <Route path="/reviews" element={<CustomerReviews />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/cake-detail/:name" element={<CakeDetail addToCart={addToCart} />} />
+            <Route path="/cart" element={<Cart cartItems={cartItems} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} />} />
+            <Route path="/cake-detail/:name" element={<CakeDetail />} />
           </Routes>
         </div>
         <Footer />
-        <Cart 
-          cartItems={cartItems} 
-          addToCart={addToCart} 
-          removeFromCart={removeFromCart} 
-          clearCart={clearCart} 
-          isCartOpen={isCartOpen} 
-          toggleCart={toggleCart} 
-        />
       </div>
     </Router>
   );

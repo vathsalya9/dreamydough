@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './CakeDetail.css';
 import RecommendedCakes from './RecommendedCakes';
-import Footer from './Footer';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const CakeDetail = () => {
   const { state } = useLocation(); // Get state from navigation
@@ -73,7 +73,9 @@ const CakeDetail = () => {
         animate={controls}
         ref={ref}
       >
-        <button className="back-button" onClick={() => navigate(-1)}>← Back</button>
+        <div className="back-arrow" onClick={() => navigate('/')}>
+          <FaArrowLeft size={24} />
+        </div>
         <motion.div
           className="cake-detail-content"
           initial={{ opacity: 0, y: 50 }}
@@ -133,7 +135,6 @@ const CakeDetail = () => {
         </motion.div>
       </motion.div>
       <RecommendedCakes addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
-      <Footer />
     </div>
   );
 };
