@@ -44,19 +44,19 @@ const Navbar = ({ cartItems, toggleCart }) => {
           <Link to="/">Home</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.5)}>
-          <Link to="/about">About</Link>
+          <Link to="/#about">About</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.6)}>
           <Link to="/order">Order</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.7)}>
-          <Link to="/recommended">Popular</Link>
+          <Link to="/#recommended">Popular</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.8)}>
-          <Link to="/reviews">Reviews</Link>
+          <Link to="/#reviews">Reviews</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.9)}>
-          <Link to="/contact">Contact</Link>
+          <Link to="/#contact">Contact</Link>
         </motion.li>
       </motion.ul>
       <motion.div
@@ -66,7 +66,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
         whileTap={{ scale: 0.9 }}
         variants={FadeUp(1)}
       >
-        <Link to="#cart">
+        <Link to="/#cart">
           <FaShoppingCart size={30} color="black" />
           {cartCount > 0 && (
             <motion.span
