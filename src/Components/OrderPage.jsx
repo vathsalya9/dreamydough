@@ -68,15 +68,6 @@ const OrderPage = ({ addToCart, removeFromCart, cartItems, toggleCart }) => {
         <div className="back-arrow" onClick={() => navigate('/')}>
           <FaArrowLeft size={24} />
         </div>
-        <div className="cart" 
-        onClick={goToCartPage} 
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}>
-          <FaShoppingCart size={30} color="black" />
-          {cartItems.length > 0 && (
-            <div className="cart-count">{cartItems.length}</div>
-          )}
-        </div>
       </div>
       <div className="order-page-content">
         <h2 className="order-page-title">Order Your Cakes</h2>
