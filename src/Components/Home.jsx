@@ -86,7 +86,7 @@ const Home = () => {
   }, []);
 
   const handleOrderNowClick = () => {
-    navigate('/order');
+    navigate('/order/123');
   };
 
   return (

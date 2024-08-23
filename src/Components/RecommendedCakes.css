@@ -96,3 +96,15 @@
 .add-to-cart-btn:hover {
     background-color: #312c3a; /* Darker shade on hover */
 }
+
+.cart {
+    display: flex;
+    align-items: center;
+    color: #957DAD;
+    size: 30px;
+  }
+  
+  .cart {
+    position: relative;
+    cursor: pointer;
+  }

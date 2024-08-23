@@ -6,12 +6,12 @@ import './CakeDetail.css';
 import RecommendedCakes from './RecommendedCakes';
 import { FaArrowLeft } from 'react-icons/fa';
 
-const CakeDetail = () => {
-  const { state } = useLocation(); // Get state from navigation
-  const navigate = useNavigate();
-  const { cake } = state || {}; // Destructure cake from state, fallback to an empty object
-  const [size, setSize] = useState('Half Kg'); // Default size
-  const [cartItems, setCartItems] = useState([]); // Local cart state
+const CakeDetail = ({ addToCart, removeFromCart, cartItems }) => {
+  const { state } = useLocation();
+  const navigate = useNavigate(); // Ensure this is called unconditionally
+  const { cake } = state || {};
+  const [size, setSize] = useState('Half Kg');
+  const [addedToCart, setAddedToCart] = useState(false);
 
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -31,29 +31,17 @@ const CakeDetail = () => {
     }
   }, [controls, inView]);
 
-  // Scroll to top on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 
-  // Debugging: Log cake data
   useEffect(() => {
-    console.log(cake); // Check if cake data is logged
+    console.log(cake);
   }, [cake]);
 
-  // If no cake data is available, show a loading message
   if (!cake) {
     return <div>Loading...</div>;
   }
-
-  // Handle adding cake to cart
-  const addToCart = (cake) => {
-    setCartItems((prevItems) => [...prevItems, cake]);
-  };
-
-  const removeFromCart = (cake) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.name !== cake.name));
-  };
 
   const handleAddToCart = () => {
     const updatedCake = {
@@ -61,7 +49,8 @@ const CakeDetail = () => {
       price: size === 'Full Kg' ? `$${(parseFloat(cake.price.slice(1)) * 2).toFixed(2)}` : cake.price
     };
     addToCart(updatedCake);
-    navigate('/');
+    setAddedToCart(true);
+    setTimeout(() => setAddedToCart(false), 3000);
   };
 
   return (
@@ -73,7 +62,7 @@ const CakeDetail = () => {
         animate={controls}
         ref={ref}
       >
-        <div className="back-arrow" onClick={() => navigate('/')}>
+        <div className="back-arrow" onClick={() => navigate(-1)}>
           <FaArrowLeft size={24} />
         </div>
         <motion.div
@@ -131,6 +120,11 @@ const CakeDetail = () => {
             <button className="add-to-cart-btn" style={{ marginTop: '20px' }} onClick={handleAddToCart}>
               Add to Cart
             </button>
+            {addedToCart && (
+              <div className="feedback-message" style={{ color: 'green', marginTop: '10px' }}>
+                Item added to cart!
+              </div>
+            )}
           </div>
         </motion.div>
       </motion.div>

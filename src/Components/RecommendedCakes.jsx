@@ -38,6 +38,15 @@ const RecommendedCakes = ({ addToCart, removeFromCart, cartItems }) => {
 
   return (
     <div id="recommended">
+      <div className="cart" 
+        onClick={toggleCart} 
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}>
+          <FaShoppingCart size={30} color="black" />
+          {cartItems.length > 0 && (
+            <div className="cart-count">{cartItems.length}</div>
+          )}
+        </div>
       <section className="recommended-cakes-section">
         <h2 className="recommended-cakes-title">Popular Cakes</h2>
         <div className="cakes-grid">
@@ -61,14 +70,14 @@ const RecommendedCakes = ({ addToCart, removeFromCart, cartItems }) => {
                     <button
                       className="add-to-cart-btn"
                       style={{ backgroundColor: 'gray' }}
-                      onClick={(e) => { e.stopPropagation(); removeFromCart(cake); }}
+                      onClick={() => removeFromCart(cake)}
                     >
                       Remove from Cart
                     </button>
                   ) : (
                     <button
                       className="add-to-cart-btn"
-                      onClick={(e) => { e.stopPropagation(); addToCart(cake); }}
+                      onClick={() => addToCart(cake)}
                     >
                       Add to Cart
                     </button>
