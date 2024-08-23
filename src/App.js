@@ -9,7 +9,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import OrderPage from './Components/OrderPage';
 import Cart from './Components/Cart';
-import CakeDetail from './Components/CakeDetail'; // Import CakeDetail component
+import CakeDetail from './Components/CakeDetail';
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
@@ -68,7 +68,7 @@ function App() {
               />
             </>
           } />
-          <Route path="/orde/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
+          <Route path="/order/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
           <Route path="/cake-detail/:id" element={<CakeDetail addToCart={addToCart} />} />
         </Routes>
       </div>
