@@ -32,8 +32,9 @@ const RecommendedCakes = ({ addToCart, removeFromCart, cartItems }) => {
   const isInCart = (cake) => cartItems.some((item) => item.name === cake.name);
 
   const goToCakeDetail = (cake) => {
-    navigate('/cake-detail', { state: { cake } }); // Navigate to cake detail page with state
+    navigate(`/cake-detail/${cake.name}`, { state: { cake } });
   };
+  
 
   return (
     <div id="recommended">

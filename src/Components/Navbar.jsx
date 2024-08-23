@@ -47,7 +47,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
           <Link to="/#about">About</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.6)}>
-          <Link to="/order">Order</Link>
+          <Link to="/order/123">Order</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.7)}>
           <Link to="/#recommended">Popular</Link>

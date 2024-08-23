@@ -36,6 +36,11 @@ const CakeDetail = () => {
     window.scrollTo(0, 0);
   }, []); // Empty dependency array ensures this runs once on mount
 
+  // Debugging: Log cake data
+  useEffect(() => {
+    console.log(cake); // Check if cake data is logged
+  }, [cake]);
+
   // If no cake data is available, show a loading message
   if (!cake) {
     return <div>Loading...</div>;
@@ -75,10 +80,10 @@ const CakeDetail = () => {
           animate={controls}
           transition={{ duration: 0.5 }}
         >
-          <div className="cake-image-container" >
+          <div className="cake-image-container">
             <img src={cake.image} alt={cake.name} className="cake-image-img" />
           </div>
-          <div className="cake-info" style={{paddingLeft: '40px'}}>
+          <div className="cake-info" style={{ paddingLeft: '40px' }}>
             <motion.h2
               style={{ color: 'black', fontSize: '30px', fontFamily: 'EB Garamond, serif' }}
               initial={{ opacity: 0, y: -30 }}
