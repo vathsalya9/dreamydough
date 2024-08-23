@@ -36,27 +36,27 @@ const Navbar = ({ cartItems, toggleCart }) => {
       variants={FadeUp(0.1)}
     >
       <motion.div className="logo" variants={FadeUp(0.2)} style={{ display: 'flex', alignItems: 'center' }}>
-  <img src={Logoimage} style={{ width: '60px', height: '60px' }} alt="imagelogo" />
-  <h1 style={{ margin: 0 }}>Dreamy Dough</h1>
-</motion.div>
+        <img src={Logoimage} style={{ width: '60px', height: '60px' }} alt="imagelogo" />
+        <h1 style={{ margin: 0 }}>Dreamy Dough</h1>
+      </motion.div>
       <motion.ul className="nav-links" variants={FadeUp(0.3)}>
         <motion.li variants={FadeUp(0.4)}>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.5)}>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.6)}>
           <Link to="/order">Order</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.7)}>
-          <a href="#recommended">Popular</a>
+          <Link to="/recommended">Popular</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.8)}>
-          <a href="#reviews">Reviews</a>
+          <Link to="/reviews">Reviews</Link>
         </motion.li>
         <motion.li variants={FadeUp(0.9)}>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </motion.li>
       </motion.ul>
       <motion.div
@@ -66,7 +66,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
         whileTap={{ scale: 0.9 }}
         variants={FadeUp(1)}
       >
-        <a href="#cart">
+        <Link to="#cart">
           <FaShoppingCart size={30} color="black" />
           {cartCount > 0 && (
             <motion.span
@@ -78,7 +78,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
               {cartCount}
             </motion.span>
           )}
-        </a>
+        </Link>
       </motion.div>
     </motion.nav>
   );

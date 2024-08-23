@@ -48,29 +48,25 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Navbar cartItems={cartItems} toggleCart={toggleCart} />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Navbar cartItems={cartItems} toggleCart={toggleCart} />
-              <Home />
-              <About />
-              <RecommendedCakes addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
-              <CustomerReviews />
-              <Contact />
-              <Footer />
-              <Cart 
-                cartItems={cartItems} 
-                addToCart={addToCart} 
-                removeFromCart={removeFromCart} 
-                clearCart={clearCart} 
-                isCartOpen={isCartOpen} 
-                toggleCart={toggleCart} 
-              />
-            </>
-          } />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/order/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
+          <Route path="/recommended" element={<RecommendedCakes addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />} />
+          <Route path="/reviews" element={<CustomerReviews />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/cake-detail/:id" element={<CakeDetail addToCart={addToCart} />} />
         </Routes>
+        <Footer />
+        <Cart 
+          cartItems={cartItems} 
+          addToCart={addToCart} 
+          removeFromCart={removeFromCart} 
+          clearCart={clearCart} 
+          isCartOpen={isCartOpen} 
+          toggleCart={toggleCart} 
+        />
       </div>
     </Router>
   );
