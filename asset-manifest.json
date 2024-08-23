@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dreamydough/static/css/main.ec7058cb.css",
-    "main.js": "/dreamydough/static/js/main.3bcb2055.js",
+    "main.css": "/dreamydough/static/css/main.49ab173c.css",
+    "main.js": "/dreamydough/static/js/main.5611ebf8.js",
     "static/js/453.e95fd7e8.chunk.js": "/dreamydough/static/js/453.e95fd7e8.chunk.js",
     "static/media/Cake 12.jpg": "/dreamydough/static/media/Cake 12.be41b523e0b4f83431e0.jpg",
     "static/media/Cake 9.png": "/dreamydough/static/media/Cake 9.026c2cdcf3e4eae51715.png",
@@ -20,12 +20,12 @@
     "static/media/Cake 5.jpeg": "/dreamydough/static/media/Cake 5.636d3b7581a92f0eac8c.jpeg",
     "static/media/Logo.png": "/dreamydough/static/media/Logo.31af5d86d65db918dc8b.png",
     "index.html": "/dreamydough/index.html",
-    "main.ec7058cb.css.map": "/dreamydough/static/css/main.ec7058cb.css.map",
-    "main.3bcb2055.js.map": "/dreamydough/static/js/main.3bcb2055.js.map",
+    "main.49ab173c.css.map": "/dreamydough/static/css/main.49ab173c.css.map",
+    "main.5611ebf8.js.map": "/dreamydough/static/js/main.5611ebf8.js.map",
     "453.e95fd7e8.chunk.js.map": "/dreamydough/static/js/453.e95fd7e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec7058cb.css",
-    "static/js/main.3bcb2055.js"
+    "static/css/main.49ab173c.css",
+    "static/js/main.5611ebf8.js"
   ]
 }
