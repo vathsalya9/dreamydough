@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -68,8 +68,8 @@ function App() {
               />
             </>
           } />
-          <Route path="/order" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
-          <Route path="/cake-detail" element={<CakeDetail addToCart={addToCart} />} />
+          <Route path="/orde/:idr" element={<OrderPage addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} toggleCart={toggleCart} />} />
+          <Route path="/cake-detail/:id" element={<CakeDetail addToCart={addToCart} />} />
         </Routes>
       </div>
     </Router>
