@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RecommendedCakes.css';
+import { FaShoppingCart } from 'react-icons/fa';
 import cake1 from './Cakes/Cake 1.jpeg';
 import cake2 from './Cakes/Cake 2.jpg';
 import cake3 from './Cakes/Cake 3.jpeg';
@@ -34,12 +35,16 @@ const RecommendedCakes = ({ addToCart, removeFromCart, cartItems }) => {
   const goToCakeDetail = (cake) => {
     navigate(`/cake-detail/${cake.name}`, { state: { cake } });
   };
+
+  const goToCartPage = () => {
+    navigate('/cart'); // Navigate to the Cart page
+  };
   
 
   return (
     <div id="recommended">
       <div className="cart" 
-        onClick={toggleCart} 
+        onClick={goToCartPage} 
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}>
           <FaShoppingCart size={30} color="black" />

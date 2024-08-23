@@ -58,6 +58,10 @@ const OrderPage = ({ addToCart, removeFromCart, cartItems, toggleCart }) => {
     navigate(`/cake-detail/${cake.name}`, { state: { cake } });
   };
 
+  const goToCartPage = () => {
+    navigate('/cart'); // Navigate to the Cart page
+  };
+
   return (
     <div className="order-page-container">
       <div className="header">
@@ -65,7 +69,7 @@ const OrderPage = ({ addToCart, removeFromCart, cartItems, toggleCart }) => {
           <FaArrowLeft size={24} />
         </div>
         <div className="cart" 
-        onClick={toggleCart} 
+        onClick={goToCartPage} 
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}>
           <FaShoppingCart size={30} color="black" />
