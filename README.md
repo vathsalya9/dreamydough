@@ -1,6 +1,7 @@
 # Dreamy Dough 🍰
 
 ## Project URL : 
+https://vathsalya9.github.io/dreamydough/#/
 
 Welcome to Dreamy Dough, a delightful web application that lets you explore, customize, and order the most delectable cakes for any occasion. Whether you're planning a birthday, wedding, or just a sweet treat for yourself, Dreamy Dough offers a wide variety of options to satisfy your cravings.
 
