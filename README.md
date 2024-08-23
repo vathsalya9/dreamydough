@@ -18,16 +18,16 @@ Welcome to Dreamy Dough, a delightful web application that lets you explore, cus
 
 ## Technologies Used
 
-Frontend: React.js, CSS, HTML
 
-Animations: Framer Motion
-
-Routing: React Router
-
-State Management: React Hooks
-
-Package Manager: npm
-
+React (JavaScript library for building user interfaces)
+Redux (JavaScript library for managing application state)
+react-redux (Official React bindings for Redux)
+npm (Node Package Manager) or yarn (Alternative package manager)
+Express.js (Node.js web application framework for building APIs)
+Firebase (NoSQL database)
+Stripe API or any other payment gateway API of your choice
+IDE or text editor of your choice (Visual Studio Code, Sublime Text, etc.)
+Optional: CSS framework like Bootstrap or Material UI for styling
 Icons and Fonts: Google Fonts, Font Awesome
 
 ## Screenshots
