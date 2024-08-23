@@ -10,6 +10,8 @@ import Footer from './Components/Footer';
 import OrderPage from './Components/OrderPage';
 import Cart from './Components/Cart';
 import CakeDetail from './Components/CakeDetail';
+import './App.css';
+
 
 function App() {
   const [cartItems, setCartItems] = React.useState([]);
