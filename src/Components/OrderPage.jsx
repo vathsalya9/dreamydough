@@ -110,7 +110,6 @@ const OrderPage = ({ addToCart, removeFromCart, cartItems, toggleCart }) => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
